@@ -2,7 +2,7 @@
 
 # echo -n "what is the name of the project?"
 # read -e PROJECT
-# 
+
 # #setting up bower dependencies directory
 # echo 'going to create bowerrc file'
 # printf '%s\n' ' { "directory": "resources/assets/bower" }' > .bowerrc
@@ -24,10 +24,10 @@
 # #echo "# toibuonban5" >> README.md
 # echo 'Initializing git repository'
 # git init
-printf '%s\n %s\n %s\n %s\n' '/public/packages/vendor' 'node_modules/' '.sass-cache/' '/public/js/react/.module-cache' >> .gitignore
-git add .
-git commit -m "first commit"
-git remote add origin git@github.com:BryantDavidDavis/$PROJECT.git
-git push -u origin master
+# printf '%s\n %s\n %s\n %s\n' '/public/packages/vendor' 'node_modules/' '.sass-cache/' '/public/js/react/.module-cache' >> .gitignore
+# git add .
+# git commit -m "first commit"
+# git remote add origin git@github.com:BryantDavidDavis/$PROJECT.git
+# git push -u origin master
 
 #installed testdummy from laravel, but then had to manually composer install Faker dev-master to get password option to work
