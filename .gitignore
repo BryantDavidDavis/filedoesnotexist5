@@ -1,0 +1,7 @@
+/vendor
+/node_modules
+.env
+/public/packages/vendor
+ node_modules/
+ .sass-cache/
+ /public/js/react/.module-cache

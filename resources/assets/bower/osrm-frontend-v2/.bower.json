@@ -1,0 +1,14 @@
+{
+  "name": "osrm-frontend-v2",
+  "homepage": "https://github.com/Project-OSRM/osrm-frontend-v2",
+  "_release": "6b85f208f5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "6b85f208f527a27e9a249d88eaddb5e9efeccf1d"
+  },
+  "_source": "git://github.com/Project-OSRM/osrm-frontend-v2.git",
+  "_target": "*",
+  "_originalSource": "Project-OSRM/osrm-frontend-v2",
+  "_direct": true
+}
