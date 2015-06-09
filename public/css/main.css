@@ -1,0 +1,32 @@
+.page {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 27%;
+}
+.welcome-photo-row{
+	height: 100vh;
+	z-index: 999;
+}
+
+.welcome-photo-row .columns{
+	margin-top: 10vh;
+	height: 30vh;
+	z-index: 999;
+}
+
+blockquote {
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 2em;
+}
+
+circle {
+  stroke-width: 1.5px;
+}
+
+line {
+  stroke: #999;
+}
+
+.accordion {
+	color: white;
+}

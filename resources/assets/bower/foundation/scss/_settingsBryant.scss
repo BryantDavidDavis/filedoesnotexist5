@@ -135,14 +135,14 @@ $bryant_purple: #CC97AA;
 //modified
  $primary-color: #008CBA;
  $secondary-color: #e7e7e7;
- //$alert-color: #f04124;
-//$success-color: #43AC6A;
- $alert-color: $bryant_red;
- $success-color: $bryant_light;
+ $alert-color: #f04124;
+$success-color: #43AC6A;
+//$alert-color: $bryant_red;
+ //$success-color: $bryant_light;
  $warning-color: #f08a24;
  $info-color: #a0d3e8;
 // We use these to control various global styles
-$body-bg: #83C0FF;
+$body-bg: $white;
 $body-font-color: #044385;
 $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -216,7 +216,7 @@ $body-font-family: $font-family-sans-serif;
  $header-font-family: Comic Sans MS;
 // $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
-$header-font-color: $bryant_light;
+//$header-font-color: $bryant_light;
 // $header-line-height: 1.4;
 // $header-top-margin: .2rem;
 // $header-bottom-margin: .5rem;
@@ -298,10 +298,10 @@ $header-font-color: $bryant_light;
 
 // We use these to style blockquotes
 //$blockquote-font-color: scale-color($header-font-color, $lightness: 35%);
-//$blockquote-font-color: $snow;
+$blockquote-font-color: $snow;
 // $blockquote-padding: rem-calc(9 20 0 19);
 //$blockquote-border: none;
-// $blockquote-cite-font-size: rem-calc(13);
+$blockquote-cite-font-size: rem-calc(20);
 // $blockquote-cite-font-color: scale-color($header-font-color, $lightness: 23%);
 // $blockquote-cite-link-color: $blockquote-cite-font-color;
 
@@ -337,15 +337,15 @@ $header-font-color: $bryant_light;
 //$include-html-accordion-classes: $include-html-classes;
 
 //$accordion-navigation-padding: rem-calc(16);
- $accordion-navigation-bg-color: $bryant_light;
+// $accordion-navigation-bg-color: rgba(0,0,0,0.5);
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
- $accordion-navigation-font-color: $bryant_blue;
+// $accordion-navigation-font-color: $snow;
 // $accordion-navigation-font-size: rem-calc(16);
-$accordion-navigation-font-family: Comic Sans MS;
+//$accordion-navigation-font-family: Comic Sans MS;
 
 //$accordion-content-padding: ($column-gutter/2);
-$accordion-content-active-bg-color: $primary-color;
+//$accordion-content-active-bg-color: rgba(0,0,0,0.5);
 
 // 02. Alert Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -451,7 +451,7 @@ $accordion-content-active-bg-color: $primary-color;
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
- $button-font-color: $snow;
+// $button-font-color: $snow;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -466,7 +466,7 @@ $accordion-content-active-bg-color: $primary-color;
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
- $button-bg-color: $charcoal;
+// $button-bg-color: $charcoal;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
@@ -638,13 +638,13 @@ $accordion-content-active-bg-color: $primary-color;
 // $form-label-font-size: rem-calc(14);
 // $form-label-font-weight: $font-weight-normal;
 // $form-label-line-height: 1.5;
-$form-label-font-color: scale-color($steel, $lightness: 30%);
+//$form-label-font-color: scale-color($steel, $lightness: 30%);
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
- $input-bg-color: $snow;
+// $input-bg-color: $snow;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
 // $input-border-color: scale-color($white, $lightness: -20%);
 // $input-focus-border-color: scale-color($white, $lightness: -40%);
@@ -974,7 +974,7 @@ $input-border-radius: $global-radius;
 
 // We use these to control the background and border styles
 //$panel-bg: scale-color($white, $lightness: -5%);
-$panel-bg: $bryant_light;
+//$panel-bg: $bryant_light;
 // $panel-border-style: solid;
 // $panel-border-size: 1px;
 
@@ -1117,7 +1117,7 @@ $progress-meter-secondary-color: $secondary-color;
 // $reveal-position-top: rem-calc(100);
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
-// $reveal-modal-padding: rem-calc(20);
+$reveal-modal-padding: rem-calc(0);
 // $reveal-box-shadow: 0 0 10px rgba($black,.4);
 
 // We use these to style the reveal close button

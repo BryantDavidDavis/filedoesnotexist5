@@ -15,7 +15,13 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
+//Route::get('admin', 'AdminController@index');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+
+Route::resource('admin', 'AdminController');
+Route::resource('blogs', 'BlogsController');
+

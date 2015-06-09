@@ -37,6 +37,6 @@ elixir(function(mix) {
 		'../assets/bower/foundation/js/vendor/modernizr.js',
 		'../assets/bower/foundation/js/vendor/jquery.js', 
 		'../assets/bower/foundation/js/fastclick.js', 
-		'../assets/bower/foundation/js/foundation.min.js'
+		'../assets/bower/foundation/js/foundation.min.js',
 	], 'public/js/vendor.js');	
 });

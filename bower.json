@@ -4,6 +4,7 @@
     "foundation": "~5.5.1",
     "foundation-icon-fonts": "*",
     "react": "~0.13.1",
-    "osrm-frontend-v2": "Project-OSRM/osrm-frontend-v2"
+    "osrm-frontend-v2": "Project-OSRM/osrm-frontend-v2",
+    "d3": "~3.5.5"
   }
 }
