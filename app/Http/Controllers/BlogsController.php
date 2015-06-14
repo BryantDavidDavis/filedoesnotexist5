@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Blog;
 use Request;
+use Illuminate\Http\Response;
 
 class BlogsController extends Controller {
 
@@ -14,8 +15,8 @@ class BlogsController extends Controller {
 	 */
 	public function index()
 	{
-		$blogs = Blog::where('user_id', '=', 0);
-		return json_encode($blogs);
+		//$blogs = Blog::where('user_id', 1)->get();
+		return response()->view('blogs.index');
 	}
 
 	/**
@@ -81,5 +82,21 @@ class BlogsController extends Controller {
 	{
 		//
 	}
+	
+	public function blogMapAjax($id) {
 
+		$blogPointsArray = [];
+		$results = Blog::where('user_id', $id)->get();
+		$app = app();
+		foreach ($results as $result) {
+			$blogPoint = $app->make('stdClass');
+			$blogPoint->type = "Feature";
+			$blogPoint->geometry = $app->make('stdClass');
+			$blogPoint->geometry->type = "Point";
+			$blogPoint->geometry->coordinates = [$result->longitude, $result->latitude];
+			$blogPointsArray[] = $blogPoint;
+		}
+		return response()->json($blogPointsArray);
+		//return response()->json(Blog::where('user_id', $id)->get());
+	}
 }

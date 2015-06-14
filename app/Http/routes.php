@@ -22,6 +22,8 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('blogs/blogMapAjax/{id}', array('as' => 'blogs.blogMapAjax', 'uses' => 'BlogsController@blogMapAjax'));
+
 Route::resource('admin', 'AdminController');
 Route::resource('blogs', 'BlogsController');
 
