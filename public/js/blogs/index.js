@@ -19,31 +19,62 @@ var geojsonMarkerOptions = {
 var myIcon = L.icon({
     iconUrl: '../images/bryant_bamboo_face.png',
     iconRetinaUrl: '../images/bryant_bamboo_face.png',
-    iconAnchor: [22, 94],
     popupAnchor: [-3, -76],
     shadowSize: [68, 95],
     shadowAnchor: [22, 94]
 });
 
-/*
-function FeatureCollection() {
-	this.type = 'FeatureCollection';
-	this.features = new Array();
-}
+var summaryControl
 
-function Feature() {
-	this.type = 'Feature';
-	this.geometry = new Object;
-	this.properties = new Object;
-}
+function showSummary(e) {
+	console.log(e.target);
+/*
+	$('.alert').alert('close');
+	digesterLayer.setStyle(geojsonMarkerOptions);
+	
+	var layer = e.target;
+	selectedDigesterID = layer.feature.properties.digester_id;
+	layer.setStyle({
+		radius: 8,
+		fillColor: "#f00"
+	});
+	
+	if($('.map-panel').length) {
+		$('.map-panel').prepend(makeBidBox(makeDetailsPanel(layer.feature.properties), info.bidForm(selectedDigesterID)));
+		$('html, body').animate({scrollTop: $('.map-panel').offset().top - 60}, 400);	
+	} else {
+		$('.map-container').prepend(makeBidBox(makeDetailsPanel(layer.feature.properties), info.bidForm(selectedDigesterID)));
+		$('html, body').animate({scrollTop: $('.map-mapcontainer').offset().top - 60}, 400);
+	}
+	//info.bidBox(info.bidForm(selectedDigesterID));
+	hasBeenClicked = true;
+	$(".alert-dismissible").on("click", function() {
+		hasBeenClicked = false;
+	});
+	$("#save-button").on("click", function() {
+		$.ajax({
+			url: '/tools/bidAjax',
+			type: 'post',
+			data: $("#bid-form").serialize(),
+			success: function(data) {
+				digesterLayer.setStyle(geojsonMarkerOptions);
+				info.bidConfirmation();
+			},
+			error: function(xhr, textStatus, thrownError) {
+				alert("not working captain, your bid wasn't submitted");
+			}
+		});
+	});	
 */
+	
+}
 
 function onEachFeature(feature, layer) {
 	//layer.bindPopup(feature.properties.popUpContent);
 	layer.on({
 		//mouseover: showStuff,
 		//mouseout: backToNormal,
-		click: console.log("hello")
+		click: showSummary
 	});
 }
 //var layerGroup = L.layerGroup().addTo(map);
